@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Exo', sans-serif;
+    font-size:1.2vw;
+}
+.container{width:80%;margin:auto;}
+.bg{
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cap{text-transform: uppercase;}
+.btn{
+    background-color:#ff6d6d;
+    color:white;
+    border-radius: 5px;
+}
+.text-center{text-align: center;}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.left{float:left}
+.right{float:right;}
+.clear{clear: both;}
+.red{color:#ff6d6d}
+ul{list-style: none;}
+section{padding:60px 0;}
+h3{font-size:2vw}
+/*Header*/
+header{
+    background-image:url(../images/header.png);
+    height:800px;
+    background-position: center top !important
+}
+header .container{flex-direction: column;}
+header h2{
+    font-size:5vw;
+    font-weight: 100;
+    margin:auto;
+    max-width:900px;
+}
+header .play{
+    color:white;
+    padding:40px 0 30px;
+}
+header .play i{
+    background:#8185a3;
+    border-radius: 50%;
+    width:50px;
+    height:50px;
+    line-height: 50px;
+}
+header .detail-header{
+    color:#fff;
+    text-shadow:1px 1px 1px #000;
+}
+header .btn {
+    padding:10px 40px;
+    width:190px;
+    margin:0 auto 20px;
+}
+/*First Section*/
+.first,
+.third{position:relative;overflow: hidden}
+.first .left,
+.third .right {
+    width:60%;
+    padding:8.229% 8% 8.229% 0;
+}
+.first .left p:first-of-type,
+.third .right p:first-of-type{
+    margin-bottom: 10px;
+}
+.first .left h3,
+.third .right h3{
+    margin-bottom: 40px
+}
+.first .left h3 .red,
+.third .right h3 .red{
+    letter-spacing: 2px
+}
+.first .left p:nth-of-type(2),
+.third .right p:nth-of-type(2){
+    margin-bottom: 20px
+}
+.first .right{
+    right:0;
+    background:#ececec;
+}
+.first .right,
+.third .left{
+    width:40%;
+    top:0;
+    height: 100%;
+    position: absolute;
+}
+.first .right .mark,
+.third .left .mark,
+footer{
+    background-image: linear-gradient(to bottom right, transparent 50%, #ff6d6d 50%);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size:100% 70%;
+    position:relative;
+    background-position:bottom;
+}
+.first .load{
+/*    left:-150%;*/
+    left:100%;
+}
+.first .load,
+.third .load{
+    background:#ff6d6d;
+    height:100%;
+    width:1920px;
+    position: absolute;
+}
+/*Features Section*/
+.feat{
+    padding-top: 120px;
+    background-color:#f6f5f4;
+    background-image:url(../images/penholder.png),
+                     url(../images/earphone.png),
+                     url(../images/cofee.png);
+    background-repeat: no-repeat;
+    background-position:9% 0%, 90% 0, 90% 100%;
+    overflow: hidden;
+}
+.feat h3,
+.subscribe h3{
+    margin-bottom: 80px;
+}
+.feat .feature,
+.staff .team{
+    width:calc(33.333333% - 10px)
+}
+.feat .feature + .feature,
+.staff .team + .team {
+    margin-left:15px;
+}
+.feat .feature .img{
+    width:65px;
+    height:65px;
+    margin:0 auto 50px;
+}
+.feat .feature:first-of-type .img{background-image: url(../images/feat1.png)}
+.feat .feature:nth-of-type(2) .img{background-image: url(../images/feat2.png)}
+.feat .feature:nth-of-type(3) .img{background-image: url(../images/feat3.png)}
+.feat .feature h4,
+.staff .team h4,
+.staff .team h5{
+    margin-bottom: 15px
+}
+.feat .feature p,
+.fifth p:not(.red){color:#848484;}
+/*Third Section*/
+.third .left{left:0;}
+.third .left .mark{
+    background-image: url(../images/macbook.png),
+                      linear-gradient(to bottom left, transparent 50%, #ff6d6d 50%);
+    background-size: 100% ,75% 120%;
+    background-position: center ,left bottom;
+}
+.third .load{right:100%;}
+/*Team Section*/
+.staff{background-image: url(../images/team.png)}
+.staff .team{padding-top:50px;margin-bottom:50px;}
+.staff .team .img{
+    background:#4e4e5e;
+    width:100px;
+    height:100px;
+    margin:0 auto 50px;
+}
+.staff .team h4{color:#fff;}
+.staff .team p,.staff li{color:#c9c3c3}
+.staff li{
+    display:inline-block;
+    width:20%;
+    margin:auto;
+}
+.staff li i{font-size:5vw}
+.staff ul{overflow: hidden;margin-bottom:40px;}
+/*Fifth Section*/
+.fifth{
+    background-color:#f6f5f4;
+    padding-top:100px;
+    height:700px;
+    background-image: url(../images/browser.png);
+    background-position:center bottom;
+    background-size:auto;
+}
+.fifth h3{margin-bottom:40px;}
+.fifth p:not(.red){margin:auto;max-width:800px;}
+/*Subscribe Section*/
+.subscribe{
+    color:white;
+    background:#323969;
+}
+.subscribe h3{letter-spacing: 1px}
+.subscribe input{
+    display:block;
+    width:calc(25% - 19px);
+    border:1px solid white;
+    border-radius: 5px;
+    padding:10px 20px;
+}
+.subscribe input:not([type="submit"]){background:rgba(255,255,255,0.3);}
+.subscribe input + input {margin-left:25px;}
+.subscribe form{
+    overflow: hidden;
+    padding-top:20px;
+    margin-bottom: 40px;
+}
+.subscribe .trial{
+}
+.subscribe .terms{color:#aaa;}
+.subscribe .terms span{text-decoration: underline}
+/*TODO: Trial div*/
+
+/*Footer*/
+footer{
+    padding:50px 100px 50px 0;
+    background-position: right top;
+    background-size: 20% 105%;
+    background-image: linear-gradient(to top right, transparent 50%, #ff6d6d 50%);
+}
+footer .item{width:calc(25% - 15px);}
+footer .item + .item{margin-left:20px;}
+footer li, footer p{color:#848484;}
+footer h3{margin-bottom:20px;}
+footer .item:first-of-type span{
+}
+footer form{
+    position:relative;
+    margin-bottom:30px;
+}
+footer form input{
+    width:100%;
+    display:block;
+    background:#EEE;
+    font-size:16px;
+    line-height:16px;
+    padding:10px 20px;
+    border:1px solid #CCC;
+}
+footer form .btn{
+    position:absolute;
+    right:0;
+    height:37px;
+    top:0;
+    border-radius: 0;
+    line-height: 37px;
+    padding:0 5px;
+    box-shadow:0px 2px 1px 1px #aaa;
+}
+footer .item:nth-of-type(4) ul {overflow: hidden;}
+footer .item:nth-of-type(4) ul li {width:25%;}
+/*Responsive*/
+@media(max-width:768px) {
+    body{font-size:3vw}
+    h3{font-size:4vw}
+    .feat{
+        background-position: -15% -7%, 105% 0, 110% 105%;
+    }
+    .feat .feature,
+    .staff .team{
+        margin-left:0;
+        margin-bottom:20px;
+        width:100%;
+    }
+    .fifth{background-size:contain;}
+    .subscribe input{width:calc(50% - 13px);margin-bottom:15px;}
+    .subscribe input:not([type="submit"]){margin-left:0}
+    .subscribe input:nth-of-type(even){margin-left:25px}
+    footer h3{font-size:3vw}
+}
