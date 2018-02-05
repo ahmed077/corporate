@@ -147,6 +147,8 @@ footer form .btn {
     right:0;
     top:0;
     border-radius: 0;
+    height:37px;
+    line-height:37px;
 }
 footer li, footer p{color:#848484;}
 /*Responsive*/
